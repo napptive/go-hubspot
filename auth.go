@@ -54,3 +54,22 @@ func (a *APIKey) SetAuthentication(r *http.Request) error {
 	r.URL.RawQuery = q.Encode()
 	return nil
 }
+
+type PrivateApp struct {
+	token string
+}
+
+func SetPriveApp(key string) AuthMethod {
+
+	return func(c *Client) {
+		c.authenticator = &PrivateApp{
+			token: key,
+		}
+	}
+}
+
+func (o *PrivateApp) SetAuthentication(r *http.Request) error {
+
+	r.Header.Set("Authorization", "Bearer "+o.token)
+	return nil
+}
