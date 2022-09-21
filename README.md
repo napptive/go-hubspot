@@ -1,5 +1,5 @@
 # go-hubspot
-[![godoc](https://godoc.org/github.com/belong-inc/go-hubspot?status.svg)](https://pkg.go.dev/github.com/belong-inc/go-hubspot)
+[![godoc](https://godoc.org/github.com/napptive/go-hubspot?status.svg)](https://pkg.go.dev/github.com/napptive/go-hubspot)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 HubSpot Go Library that works with [HubSpot API v3](https://developers.hubspot.com/docs/api/overview).  
@@ -11,7 +11,7 @@ production.
 # Install
 
 ```shell
-$ go get github.com/belong-inc/go-hubspot
+$ go get github.com/napptive/go-hubspot
 ```
 
 # Usage
